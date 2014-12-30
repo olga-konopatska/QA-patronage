@@ -1,0 +1,6 @@
+Feature:  Basic check 
+	Scenario: Main screen verification - Passed
+	Scenario: Add expenses screen verification - Passed
+	Scenario: Add income screen verification - Passed
+	Scenario: Add expenses for selected category - Passed
+	Scenario: Add income for selected category - Passed

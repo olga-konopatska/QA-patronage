@@ -1,0 +1,14 @@
+Q. -  Jakiego typu testy wykonaliście w Zadaniu 2.?  
+- Testy funkcjonalne
+Q. -   Jakich elementów według Was brakuje w raporcie z Zadania 2.? 
+- Opis środowiska testowego, wnioski końcowe 
+Q. -  Po czym poznać, że zachowanie systemu to rzeczywiście błąd?
+- Zachowanie systemu jest sprzeczne z wymaganiami 
+Q. -  Wymieńcie rodzaje testów jakie powinny zostać zastosowane, żeby zapewnić najwyższą jakość przetestowanej aplikacji.  
+- Integracyjne, Akceptacyjne, Funkcjonalne, Obciążeniowe
+Q. -  Patrząc na dotychczasowe czynności oceńcie czy można w 100% przetestować oprogramowanie?  
+- Nigdy nie możemy mieć 100% pewności, że nasze oprogramowanie nie zawiera błędów. Testy umożliwiają tylko zminimalizowanie ryzyka ich wystąpienia.
+Q. -  Kiedy można zakończyć testowanie?
+-  oprogramowanie spełnia założone wymagania jakości
+-  korzyści z kontynuowania testów przestają rekompensować koszty ponoszone na testowanie
+ - został wyczerpany budżet projektu na testy
