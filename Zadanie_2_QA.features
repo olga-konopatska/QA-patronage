@@ -1,0 +1,62 @@
+Feature:  Basic check 
+	Scenario: Main screen verification
+		Given the main application screen is open
+		Then I should see "date" button
+		Then I should see "-" button
+		Then I see "+" button
+		Then I should see "balance" button
+		Then I should see "food" button
+		Then I should see "house" button
+		Then I should see "eating out" button
+		Then I should see "toiletry" button
+		Then I should see "sports" button
+		Then I should see "health" button
+		Then I should see "communications" button
+		Then I should see "clothes" button
+		Then I should see "taxi" button
+		Then I should see "entertainment" button
+		Then I should see "transport" button
+		Then I should see "car" button
+		Then I should see "menu" button
+
+	Scenario: Add expenses screen verification
+		Given the main application screen is open
+		When I click "-" button 
+		Then I should see "date" button
+		Then I should see "choose category" button
+		Then I should see "add note" button
+		Then I should see "calendar" button
+		Then I should see "amount" button
+		Then I should see "numeric keypad" button
+		Then I should see "amount" button
+		Then I should see "back" button
+
+	Scenario: Add income screen verification
+		Given the main application screen is open
+		When I click "+" button 
+		Then I should see "date" button
+		Then I should see "choose category" button
+		Then I should see "add note" button
+		Then I should see "calendar" button
+		Then I should see "amount" button
+		Then I should see "numeric keypad" button
+		Then I should see "amount" button
+		Then I should see "back" button
+
+	Scenario: Add expenses for selected category
+		Given the main application screen is open
+		When I click "-" button 
+		Then I enter amount
+		Then I choose category 
+		Then I should see balance changed
+		Then I should see category percentage updated
+
+	Scenario: Add income for selected category
+		Given the main application screen is open
+		When I click "+" button 
+		Then I enter amount
+		Then I choose category 
+		Then I should see balance changed
+
+
+
