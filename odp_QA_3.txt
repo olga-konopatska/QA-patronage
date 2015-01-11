@@ -1,0 +1,20 @@
+1.W którym przypadku łatwiej wprowadzić zmiany w scenariuszach, np. zmienić dane do logowania?
+Łatwiej wprowadzić zmiany w testach manualnych.
+2. Jaki rodzaj testów wykonuje się za pomocą testów automatycznych?
+Testy regresywne - automaty wykorzystywane przy testach funkcjonalnych, sprawdzające, czy niezmienione fragmenty aplikacji działają tak samo jak przed wprowadzeniem poprawki lub zmiany do systemu. 
+Testy wydajnościowe są wielokrotnie powtarzane i muszą być zautomatyzowane. Testy wydajności muszą dawać dokładne informacje, ręczne przeliczanie może wprowadzać dodatkowy błąd pomiaru.
+3. Jakich rodzajów testów nie wykona się za pomocą testów automatycznych, lub będą one zbyt czasochłonne i mało efektywne, żeby je wykonywać?
+Testy które wykonujemy zbyt rzadko (raz na jakiś czas).  Automaty są bardzo czule na duże zmiany interfejsu użytkownika.
+4. Jakie plusy i minusy automatyzacji dostrzegacie po wykonaniu laboratoriów, wymieńcie po 3 najważniejsze?  Ważną zaletą automatycznego wykonywania testów jest ich powtarzalność. Wdrożone testy automatyczne pozwalają oszczędzić czas testerów, którzy w innych warunkach musieliby wykonywać więcej testów manualnych. Należy tutaj jednak zaznaczyć, że ta oszczędność czasu może być tylko pozorna, ponieważ,  obsługa automatycznego środowiska testowego także wymaga sporych nakładów. Warto też wspomnieć, że jedną z głównych wad testów manualnych są błędy związane z czynnikiem ludzkim. Człowiek ma tendencję do popełniania pomyłek. Z oczywistych względów poprawnie przygotowane testy automatyczne są tej niedogodności pozbawione.
+5. Jaka jest różnica pomiędzy testami wydajnościowymi a obciążeniowymi?  Testy wydajnościowe maja potwierdzić , ze system zachowa sie poprawnie w sytuacji niskiego i znacznego obciążenia przez użytkowników.  Tego typu testy maja dać odpowiedz, jak wzrost liczby jednocześnie obsługiwanych użytkowników wpływa na czas przetwarzania zadania. w odróżnieniu od testów obciążeniowych nie jest wymagane długotrwałe utrzymywanie wysokiego obciążenia systemu.
+6. Jakie są główne cechy automatyzacji testów?
+•	Możliwość szybkiej i wydajnej weryfikacji po wgraniu zmian lub poprawek błędów,
+•	Szybkość uzyskiwania informacji,
+•	Znacząco polepszone pokrycie testowe – testy automatyczne, dzięki ich szybkości, uruchamiane mogą być dla wielu parametrów wejściowych,
+•	Wysoki koszt wdrożenia automatyzacji
+•	Obniżenie kosztów jednostkowych wykonywania testów,
+•	Możliwość łatwej kompleksowej analizy wyników testów,
+•	Minimalizacja potrzeby angażowania testerów po wdrożeniu testów,
+•	Możliwe zwiększenie ilości powtórzeń testów, skrócenie czasu wykonania.
+ 
+

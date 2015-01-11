@@ -1,0 +1,189 @@
+D:\Work\calabash>calabash-android run Monefy_1.3.0.apk
+Feature: Basic check
+
+  Scenario: Main screen verification                            # features\zadanie_QA3.feature:2
+3630 KB/s (557732 bytes in 0.150s)
+4007 KB/s (5987845 bytes in 1.459s)
+    Then I wait for the "OK" button to appear                   # calabash-android-0.5.5/lib/calabash-android/steps/progress_steps.rb:38
+    Then I press "OK"                                           # calabash-android-0.5.5/lib/calabash-android/steps/press_button_steps.rb:17
+    Then I wait for the "OK" button to appear                   # calabash-android-0.5.5/lib/calabash-android/steps/progress_steps.rb:38
+    Then I press "OK"                                           # calabash-android-0.5.5/lib/calabash-android/steps/press_button_steps.rb:17
+    Then I wait for the view with id "income_button" to appear  # calabash-android-0.5.5/lib/calabash-android/steps/progress_steps.rb:42
+    Then I wait for the view with id "expense_button" to appear # calabash-android-0.5.5/lib/calabash-android/steps/progress_steps.rb:42
+    Then I should see "January"                                 # calabash-android-0.5.5/lib/calabash-android/steps/assert_steps.rb:9
+    Then I should see "Monefy"                                  # calabash-android-0.5.5/lib/calabash-android/steps/assert_steps.rb:9
+    Then I wait for the view with id "up" to appear             # calabash-android-0.5.5/lib/calabash-android/steps/progress_steps.rb:42
+    Then I wait for the view with id "overflow" to appear       # calabash-android-0.5.5/lib/calabash-android/steps/progress_steps.rb:42
+
+  Scenario: Add expenses screen verification                               # features\zadanie_QA3.feature:14
+    Then I wait for the view with id "expense_button" to appear            # calabash-android-0.5.5/lib/calabash-android/steps/progress_steps.rb:42
+    When I press view with id "expense_button"                             # calabash-android-0.5.5/lib/calabash-android/steps/press_button_steps.rb:1
+3
+    Then I wait for the view with id "action_bar" to appear                # calabash-android-0.5.5/lib/calabash-android/steps/progress_steps.rb:42
+    Then I wait for the view with id "home" to appear                      # calabash-android-0.5.5/lib/calabash-android/steps/progress_steps.rb:42
+    Then I should see "Monefy"                                             # calabash-android-0.5.5/lib/calabash-android/steps/assert_steps.rb:9
+    Then I wait for the view with id "calendar" to appear                  # calabash-android-0.5.5/lib/calabash-android/steps/progress_steps.rb:42
+    Then I wait for the view with id "textViewDate" to appear              # calabash-android-0.5.5/lib/calabash-android/steps/progress_steps.rb:42
+    Then I should see "0 PLN"                                              # calabash-android-0.5.5/lib/calabash-android/steps/assert_steps.rb:9
+    Then I wait for the view with id "buttonAmount" to appear              # calabash-android-0.5.5/lib/calabash-android/steps/progress_steps.rb:42
+    Then I wait for the view with id "textViewNote" to appear              # calabash-android-0.5.5/lib/calabash-android/steps/progress_steps.rb:42
+    Then I wait for the view with id "linearLayoutKeyboard" to appear      # calabash-android-0.5.5/lib/calabash-android/steps/progress_steps.rb:42
+    Then I should see "1"                                                  # calabash-android-0.5.5/lib/calabash-android/steps/assert_steps.rb:9
+    Then I should see "2"                                                  # calabash-android-0.5.5/lib/calabash-android/steps/assert_steps.rb:9
+    Then I should see "3"                                                  # calabash-android-0.5.5/lib/calabash-android/steps/assert_steps.rb:9
+    Then I should see "4"                                                  # calabash-android-0.5.5/lib/calabash-android/steps/assert_steps.rb:9
+    Then I should see "5"                                                  # calabash-android-0.5.5/lib/calabash-android/steps/assert_steps.rb:9
+    Then I should see "6"                                                  # calabash-android-0.5.5/lib/calabash-android/steps/assert_steps.rb:9
+    Then I should see "7"                                                  # calabash-android-0.5.5/lib/calabash-android/steps/assert_steps.rb:9
+    Then I should see "8"                                                  # calabash-android-0.5.5/lib/calabash-android/steps/assert_steps.rb:9
+    Then I should see "9"                                                  # calabash-android-0.5.5/lib/calabash-android/steps/assert_steps.rb:9
+    Then I should see "0"                                                  # calabash-android-0.5.5/lib/calabash-android/steps/assert_steps.rb:9
+    Then I should see "."                                                  # calabash-android-0.5.5/lib/calabash-android/steps/assert_steps.rb:9
+    Then I wait for the view with id "relativeLayoutKeyboardDel" to appear # calabash-android-0.5.5/lib/calabash-android/steps/progress_steps.rb:42
+    Then I should see "Choose category"                                    # calabash-android-0.5.5/lib/calabash-android/steps/assert_steps.rb:9
+    When I press view with id "home"                                       # calabash-android-0.5.5/lib/calabash-android/steps/press_button_steps.rb:1
+3
+
+  Scenario: Add income screen verification                                 # features\zadanie_QA3.feature:41
+    Then I wait for the view with id "income_button" to appear             # calabash-android-0.5.5/lib/calabash-android/steps/progress_steps.rb:42
+    When I press view with id "income_button"                              # calabash-android-0.5.5/lib/calabash-android/steps/press_button_steps.rb:1
+3
+    Then I wait for the view with id "action_bar" to appear                # calabash-android-0.5.5/lib/calabash-android/steps/progress_steps.rb:42
+    Then I wait for the view with id "home" to appear                      # calabash-android-0.5.5/lib/calabash-android/steps/progress_steps.rb:42
+    Then I should see "Monefy"                                             # calabash-android-0.5.5/lib/calabash-android/steps/assert_steps.rb:9
+    Then I wait for the view with id "calendar" to appear                  # calabash-android-0.5.5/lib/calabash-android/steps/progress_steps.rb:42
+    Then I wait for the view with id "textViewDate" to appear              # calabash-android-0.5.5/lib/calabash-android/steps/progress_steps.rb:42
+    Then I should see "0 PLN"                                              # calabash-android-0.5.5/lib/calabash-android/steps/assert_steps.rb:9
+    Then I wait for the view with id "buttonAmount" to appear              # calabash-android-0.5.5/lib/calabash-android/steps/progress_steps.rb:42
+    Then I wait for the view with id "textViewNote" to appear              # calabash-android-0.5.5/lib/calabash-android/steps/progress_steps.rb:42
+    Then I wait for the view with id "linearLayoutKeyboard" to appear      # calabash-android-0.5.5/lib/calabash-android/steps/progress_steps.rb:42
+    Then I should see "1"                                                  # calabash-android-0.5.5/lib/calabash-android/steps/assert_steps.rb:9
+    Then I should see "2"                                                  # calabash-android-0.5.5/lib/calabash-android/steps/assert_steps.rb:9
+    Then I should see "3"                                                  # calabash-android-0.5.5/lib/calabash-android/steps/assert_steps.rb:9
+    Then I should see "4"                                                  # calabash-android-0.5.5/lib/calabash-android/steps/assert_steps.rb:9
+    Then I should see "5"                                                  # calabash-android-0.5.5/lib/calabash-android/steps/assert_steps.rb:9
+    Then I should see "6"                                                  # calabash-android-0.5.5/lib/calabash-android/steps/assert_steps.rb:9
+    Then I should see "7"                                                  # calabash-android-0.5.5/lib/calabash-android/steps/assert_steps.rb:9
+    Then I should see "8"                                                  # calabash-android-0.5.5/lib/calabash-android/steps/assert_steps.rb:9
+    Then I should see "9"                                                  # calabash-android-0.5.5/lib/calabash-android/steps/assert_steps.rb:9
+    Then I should see "0"                                                  # calabash-android-0.5.5/lib/calabash-android/steps/assert_steps.rb:9
+    Then I should see "."                                                  # calabash-android-0.5.5/lib/calabash-android/steps/assert_steps.rb:9
+    Then I wait for the view with id "relativeLayoutKeyboardDel" to appear # calabash-android-0.5.5/lib/calabash-android/steps/progress_steps.rb:42
+    Then I should see "Choose category"                                    # calabash-android-0.5.5/lib/calabash-android/steps/assert_steps.rb:9
+    When I press view with id "home"                                       # calabash-android-0.5.5/lib/calabash-android/steps/press_button_steps.rb:1
+3
+
+  Scenario: Add income for salary                               # features\zadanie_QA3.feature:68
+    Then I wait for the view with id "income_button" to appear  # calabash-android-0.5.5/lib/calabash-android/steps/progress_steps.rb:42
+    When I press view with id "income_button"                   # calabash-android-0.5.5/lib/calabash-android/steps/press_button_steps.rb:13
+    When I press view with id "buttonKeyboard1"                 # calabash-android-0.5.5/lib/calabash-android/steps/press_button_steps.rb:13
+    When I press view with id "buttonKeyboard0"                 # calabash-android-0.5.5/lib/calabash-android/steps/press_button_steps.rb:13
+    When I press view with id "buttonKeyboard0"                 # calabash-android-0.5.5/lib/calabash-android/steps/press_button_steps.rb:13
+    Then I should see "100 PLN"                                 # calabash-android-0.5.5/lib/calabash-android/steps/assert_steps.rb:9
+    Then I touch the "Choose category" text                     # calabash-android-0.5.5/lib/calabash-android/steps/press_button_steps.rb:25
+    Then I wait for the "OK" button to appear                   # calabash-android-0.5.5/lib/calabash-android/steps/progress_steps.rb:38
+    Then I press "OK"                                           # calabash-android-0.5.5/lib/calabash-android/steps/press_button_steps.rb:17
+    Then I touch the "Salary" text                              # calabash-android-0.5.5/lib/calabash-android/steps/press_button_steps.rb:25
+    Then I wait for the view with id "SliderDragView" to appear # calabash-android-0.5.5/lib/calabash-android/steps/progress_steps.rb:42
+    When I press view with id "SliderDragView"                  # calabash-android-0.5.5/lib/calabash-android/steps/press_button_steps.rb:13
+    Then I should see "Salary"                                  # calabash-android-0.5.5/lib/calabash-android/steps/assert_steps.rb:9
+    Then I should see "PLN100.00"                               # calabash-android-0.5.5/lib/calabash-android/steps/assert_steps.rb:9
+
+  Scenario: Add income for saving                               # features\zadanie_QA3.feature:84
+    Then I wait for the view with id "income_button" to appear  # calabash-android-0.5.5/lib/calabash-android/steps/progress_steps.rb:42
+    When I press view with id "income_button"                   # calabash-android-0.5.5/lib/calabash-android/steps/press_button_steps.rb:13
+    When I press view with id "buttonKeyboard2"                 # calabash-android-0.5.5/lib/calabash-android/steps/press_button_steps.rb:13
+    When I press view with id "buttonKeyboard2"                 # calabash-android-0.5.5/lib/calabash-android/steps/press_button_steps.rb:13
+    When I press view with id "buttonKeyboard2"                 # calabash-android-0.5.5/lib/calabash-android/steps/press_button_steps.rb:13
+    Then I should see "222 PLN"                                 # calabash-android-0.5.5/lib/calabash-android/steps/assert_steps.rb:9
+    Then I touch the "Choose category" text                     # calabash-android-0.5.5/lib/calabash-android/steps/press_button_steps.rb:25
+    Then I touch the "Saving" text                              # calabash-android-0.5.5/lib/calabash-android/steps/press_button_steps.rb:25
+    Then I wait for the view with id "SliderDragView" to appear # calabash-android-0.5.5/lib/calabash-android/steps/progress_steps.rb:42
+    When I press view with id "SliderDragView"                  # calabash-android-0.5.5/lib/calabash-android/steps/press_button_steps.rb:13
+    Then I should see "Saving"                                  # calabash-android-0.5.5/lib/calabash-android/steps/assert_steps.rb:9
+    Then I should see "PLN222.00"                               # calabash-android-0.5.5/lib/calabash-android/steps/assert_steps.rb:9
+
+  Scenario: Add income for Deposits                             # features\zadanie_QA3.feature:98
+    Then I wait for the view with id "income_button" to appear  # calabash-android-0.5.5/lib/calabash-android/steps/progress_steps.rb:42
+    When I press view with id "income_button"                   # calabash-android-0.5.5/lib/calabash-android/steps/press_button_steps.rb:13
+    When I press view with id "buttonKeyboard6"                 # calabash-android-0.5.5/lib/calabash-android/steps/press_button_steps.rb:13
+    Then I should see "6 PLN"                                   # calabash-android-0.5.5/lib/calabash-android/steps/assert_steps.rb:9
+    Then I touch the "Choose category" text                     # calabash-android-0.5.5/lib/calabash-android/steps/press_button_steps.rb:25
+    Then I touch the "Deposits" text                            # calabash-android-0.5.5/lib/calabash-android/steps/press_button_steps.rb:25
+    Then I wait for the view with id "SliderDragView" to appear # calabash-android-0.5.5/lib/calabash-android/steps/progress_steps.rb:42
+    When I press view with id "SliderDragView"                  # calabash-android-0.5.5/lib/calabash-android/steps/press_button_steps.rb:13
+    Then I should see "Deposits"                                # calabash-android-0.5.5/lib/calabash-android/steps/assert_steps.rb:9
+    Then I should see "PLN6.00"                                 # calabash-android-0.5.5/lib/calabash-android/steps/assert_steps.rb:9
+
+  Scenario: Add expense for Sports                              # features\zadanie_QA3.feature:110
+    Then I wait for the view with id "expense_button" to appear # calabash-android-0.5.5/lib/calabash-android/steps/progress_steps.rb:42
+    When I press view with id "expense_button"                  # calabash-android-0.5.5/lib/calabash-android/steps/press_button_steps.rb:13
+    When I press view with id "buttonKeyboard3"                 # calabash-android-0.5.5/lib/calabash-android/steps/press_button_steps.rb:13
+    When I press view with id "buttonKeyboard0"                 # calabash-android-0.5.5/lib/calabash-android/steps/press_button_steps.rb:13
+    When I press view with id "buttonKeyboard0"                 # calabash-android-0.5.5/lib/calabash-android/steps/press_button_steps.rb:13
+    Then I should see "300 PLN"                                 # calabash-android-0.5.5/lib/calabash-android/steps/assert_steps.rb:9
+    Then I touch the "Choose category" text                     # calabash-android-0.5.5/lib/calabash-android/steps/press_button_steps.rb:25
+    Then I touch the "Sports" text                              # calabash-android-0.5.5/lib/calabash-android/steps/press_button_steps.rb:25
+    Then I wait for the view with id "SliderDragView" to appear # calabash-android-0.5.5/lib/calabash-android/steps/progress_steps.rb:42
+    When I press view with id "SliderDragView"                  # calabash-android-0.5.5/lib/calabash-android/steps/press_button_steps.rb:13
+    Then I should see "Sports"                                  # calabash-android-0.5.5/lib/calabash-android/steps/assert_steps.rb:9
+    Then I should see "PLN300.00"                               # calabash-android-0.5.5/lib/calabash-android/steps/assert_steps.rb:9
+
+  Scenario: Add expense for Communications                      # features\zadanie_QA3.feature:124
+    Then I wait for the view with id "expense_button" to appear # calabash-android-0.5.5/lib/calabash-android/steps/progress_steps.rb:42
+    When I press view with id "expense_button"                  # calabash-android-0.5.5/lib/calabash-android/steps/press_button_steps.rb:13
+    When I press view with id "buttonKeyboard5"                 # calabash-android-0.5.5/lib/calabash-android/steps/press_button_steps.rb:13
+    When I press view with id "buttonKeyboard5"                 # calabash-android-0.5.5/lib/calabash-android/steps/press_button_steps.rb:13
+    Then I should see "55 PLN"                                  # calabash-android-0.5.5/lib/calabash-android/steps/assert_steps.rb:9
+    Then I touch the "Choose category" text                     # calabash-android-0.5.5/lib/calabash-android/steps/press_button_steps.rb:25
+    Then I touch the "Communications" text                      # calabash-android-0.5.5/lib/calabash-android/steps/press_button_steps.rb:25
+    Then I wait for the view with id "SliderDragView" to appear # calabash-android-0.5.5/lib/calabash-android/steps/progress_steps.rb:42
+    When I press view with id "SliderDragView"                  # calabash-android-0.5.5/lib/calabash-android/steps/press_button_steps.rb:13
+    Then I should see "Communications"                          # calabash-android-0.5.5/lib/calabash-android/steps/assert_steps.rb:9
+    Then I should see "PLN55.00"                                # calabash-android-0.5.5/lib/calabash-android/steps/assert_steps.rb:9
+
+  Scenario: Add expense for House                               # features\zadanie_QA3.feature:138
+    Then I wait for the view with id "expense_button" to appear # calabash-android-0.5.5/lib/calabash-android/steps/progress_steps.rb:42
+    When I press view with id "expense_button"                  # calabash-android-0.5.5/lib/calabash-android/steps/press_button_steps.rb:13
+    When I press view with id "buttonKeyboard7"                 # calabash-android-0.5.5/lib/calabash-android/steps/press_button_steps.rb:13
+    When I press view with id "buttonKeyboard7"                 # calabash-android-0.5.5/lib/calabash-android/steps/press_button_steps.rb:13
+    Then I should see "77 PLN"                                  # calabash-android-0.5.5/lib/calabash-android/steps/assert_steps.rb:9
+    Then I touch the "Choose category" text                     # calabash-android-0.5.5/lib/calabash-android/steps/press_button_steps.rb:25
+    Then I touch the "House" text                               # calabash-android-0.5.5/lib/calabash-android/steps/press_button_steps.rb:25
+    Then I wait for the view with id "SliderDragView" to appear # calabash-android-0.5.5/lib/calabash-android/steps/progress_steps.rb:42
+    When I press view with id "SliderDragView"                  # calabash-android-0.5.5/lib/calabash-android/steps/press_button_steps.rb:13
+    Then I should see "House"                                   # calabash-android-0.5.5/lib/calabash-android/steps/assert_steps.rb:9
+    Then I should see "PLN77.00"                                # calabash-android-0.5.5/lib/calabash-android/steps/assert_steps.rb:9
+
+  Scenario: Add expense for Taxi                                # features\zadanie_QA3.feature:151
+    Then I wait for the view with id "expense_button" to appear # calabash-android-0.5.5/lib/calabash-android/steps/progress_steps.rb:42
+    When I press view with id "expense_button"                  # calabash-android-0.5.5/lib/calabash-android/steps/press_button_steps.rb:13
+    When I press view with id "buttonKeyboard9"                 # calabash-android-0.5.5/lib/calabash-android/steps/press_button_steps.rb:13
+    Then I should see "9 PLN"                                   # calabash-android-0.5.5/lib/calabash-android/steps/assert_steps.rb:9
+    Then I touch the "Choose category" text                     # calabash-android-0.5.5/lib/calabash-android/steps/press_button_steps.rb:25
+    Then I touch the "Taxi" text                                # calabash-android-0.5.5/lib/calabash-android/steps/press_button_steps.rb:25
+    Then I wait for the view with id "SliderDragView" to appear # calabash-android-0.5.5/lib/calabash-android/steps/progress_steps.rb:42
+    When I press view with id "SliderDragView"                  # calabash-android-0.5.5/lib/calabash-android/steps/press_button_steps.rb:13
+    Then I should see "Taxi"                                    # calabash-android-0.5.5/lib/calabash-android/steps/assert_steps.rb:9
+    Then I should see "PLN9.00"                                 # calabash-android-0.5.5/lib/calabash-android/steps/assert_steps.rb:9
+
+  Scenario: Add expense for Car                                 # features\zadanie_QA3.feature:163
+    Then I wait for the view with id "expense_button" to appear # calabash-android-0.5.5/lib/calabash-android/steps/progress_steps.rb:42
+    When I press view with id "expense_button"                  # calabash-android-0.5.5/lib/calabash-android/steps/press_button_steps.rb:13
+    When I press view with id "buttonKeyboard4"                 # calabash-android-0.5.5/lib/calabash-android/steps/press_button_steps.rb:13
+    Then I should see "4 PLN"                                   # calabash-android-0.5.5/lib/calabash-android/steps/assert_steps.rb:9
+    Then I touch the "Choose category" text                     # calabash-android-0.5.5/lib/calabash-android/steps/press_button_steps.rb:25
+    Then I touch the "Car" text                                 # calabash-android-0.5.5/lib/calabash-android/steps/press_button_steps.rb:25
+    Then I wait for the view with id "SliderDragView" to appear # calabash-android-0.5.5/lib/calabash-android/steps/progress_steps.rb:42
+    When I press view with id "SliderDragView"                  # calabash-android-0.5.5/lib/calabash-android/steps/press_button_steps.rb:13
+    Then I should see "Car"                                     # calabash-android-0.5.5/lib/calabash-android/steps/assert_steps.rb:9
+    Then I should see "PLN4.00"                                 # calabash-android-0.5.5/lib/calabash-android/steps/assert_steps.rb:9
+
+11 scenarios (11 passed)
+150 steps (150 passed)
+2m58.350s
+
+D:\Work\calabash>
+
+
+
